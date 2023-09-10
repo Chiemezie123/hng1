@@ -27,10 +27,15 @@ else {
     knowTheDay = "how manage you reach here";
 }
 
-let getPtag =document.getElementById("currentDateOfTheWeek");
-let currentUTCTime= document.getElementById("currentUTCTime");
 
-currentUTCTime.innerText = ` ${getMilliseconds}`
+function keepRunning(){
 
-getPtag.innerText =  ` ${knowTheDay} `;
+    let getPtag =document.getElementById("currentDateOfTheWeek");
+    let currentUTCTime= document.getElementById("currentUTCTime");
+    currentUTCTime.innerText = ` ${getMilliseconds}`;
+    getPtag.innerText =  ` ${knowTheDay} `;
+}
+
+setInterval(keepRunning, 1000);
+
 
