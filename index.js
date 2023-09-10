@@ -1,7 +1,8 @@
 let  getDate = new Date();
 let getDay  = getDate.getDay();
-let getMilliseconds = getDate.getTime();
+let getMilliseconds = getDate.getUTCMilliseconds();
 console.log("getMilliseconds",getMilliseconds);
+console.log("this is the day", getDate);
 let knowTheDay;
 if(getDay === 1){
     knowTheDay = "monday";
@@ -19,7 +20,7 @@ else if (getDay === 5){
 else if (getDay === 6){
     knowTheDay = "saturday";
 }
-else if (getDay === 7){
+else if (getDay === 0){
     knowTheDay = "sunday";
 }
 else {
@@ -35,4 +36,4 @@ getPtag.innerText =  `current day of the week : ${knowTheDay} `;
 
 // let DisplayTheDay = document.createElement("p");
 // DisplayTheDay.innerText = `today is ${knowTheDay} `;
-getdivTag.appendChild(DisplayTheDay);
+// getdivTag.appendChild(DisplayTheDay);
