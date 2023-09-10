@@ -26,14 +26,11 @@ else if (getDay === 0){
 else {
     knowTheDay = "how manage you reach here";
 }
-let getdivTag = document.getElementsByClassName('second-container-inner')[0];
+
 let getPtag =document.getElementById("currentDateOfTheWeek");
 let currentUTCTime= document.getElementById("currentUTCTime");
 
-currentUTCTime.innerText = `the current UTC time in milliseconds: ${getMilliseconds}`
+currentUTCTime.innerText = ` ${getMilliseconds}`
 
-getPtag.innerText =  `current day of the week : ${knowTheDay} `;
+getPtag.innerText =  ` ${knowTheDay} `;
 
-// let DisplayTheDay = document.createElement("p");
-// DisplayTheDay.innerText = `today is ${knowTheDay} `;
-// getdivTag.appendChild(DisplayTheDay);
